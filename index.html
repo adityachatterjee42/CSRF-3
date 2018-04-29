@@ -4,7 +4,7 @@
     function loaded(){
     alert(1);
     var iframe = document.getElementById("ifr");
-    iframe.contentWindow.document.getElementsName("post")[0].value="achat";
+    iframe.contentWindow.document.getElementsByName("post")[0].value="achat";
     iframe.contentWindow.document.getElementById("post_form").submit();
 }
 </script>
